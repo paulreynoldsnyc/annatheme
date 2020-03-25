@@ -1,0 +1,95 @@
+---
+---
+
+@import "variables";
+
+body {
+	font-size:14pt;
+	font-family: "Inria Serif", serif;
+	width:100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size:2em;
+	font-family:$font-secondary;
+}
+
+h2{
+	font-size:1.5em;
+	text-decoration:none;
+	font-family:$font-secondary;
+}
+
+.header {
+	width:75%;
+	margin:0 auto;
+}
+
+.header img {
+	width:100%;
+}
+
+.site-info {
+	font-size:3em;
+	text-decoration: none;
+	font-family: "Inria Sans", sans-serif;
+	text-align:left;
+	text-transform: uppercase;
+	margin-bottom:0;
+}
+
+.site-desc {
+	color:$gray-0;
+	text-align:left;
+	margin-top:0;
+	font-style:italic;
+}
+
+a {
+	text-decoration: none;
+	color: $gray-0;
+}
+
+a:hover{
+	color: $tan;
+}
+
+.container {
+	padding-top:10px;
+	width:75%;
+	text-decoration: none;
+	text-align: left;
+	margin:auto;
+}
+
+.jobs__title {
+	display:inline-block;
+	background-color:$white;
+	color:$blue-1;
+	border-right:2px $blue-1 solid;
+	border-bottom:2px $blue-1 solid;
+	padding:0px 40px 5px 0px;
+}
+
+.jobs__d {
+	width:75%;
+	line-height:1.5em;
+	font-size:16pt;
+	font-weight:300;
+a{
+border-bottom:2px $orange solid;
+}
+}
+
+.footer {
+	padding:10 30 30 30px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:100px;
+	margin-bottom:30px;
+	width:75%;
+	font-family:$font-secondary;
+	font-size:0.75em;
+	border-top:1px solid $gray-2;
+}

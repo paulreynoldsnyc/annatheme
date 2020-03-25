@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
+
+<link href="https://fonts.googleapis.com/css?family=Inria+Sans:300,400|Inria+Serif:300,400&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="header"> 
+  <h1 class="site-info"><a href="{{ site.baseurl }}/">Paul Reynolds</a></h1>
+  <p class="site-desc">is an editorial director & consultant.</p>
+  <img src="/imgs/Screen%20Shot%202020-03-24%20at%209.09.34%20PM.png" />
+  </div>
+
+  <div class="container">   
+    {% for job_desc in site.job_descs%}
+      <h2 class="jobs__title jobs__title--first">{{ job_desc.name }}</h2>
+      <h3 class="jobs__d">{{ job_desc.content | markdownify }}</h3>
+  {% endfor %}
+  </div>
+
+  <div class="footer">
+    <p class="footer-desc">made with jekyll</p>
+  </div>
+
+
+</body>
+
+</html>

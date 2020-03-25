@@ -1,0 +1,22 @@
+name: Paul Reynolds
+description: is an editorial director & consultant.
+
+collections:
+  - job_descs
+
+avatar: "img/avatar-icon.png"
+
+social-network-links:
+email: "someone@example.com"
+facebook: deanattali
+twitter: daattali
+
+kramdown:
+  input: GFM
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+url: paulreynoldsnyc.github.io
+baseurl: /
